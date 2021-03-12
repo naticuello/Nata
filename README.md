@@ -1,23 +1,13 @@
-# GRUPO 6 - LUPULOPOLIS
+DESAFIO JS
 
-# ALCANCE DEL PROYECTO
-El proyecto esta basado en un E-commerce de Cerveceria donde se podran encontrar productos relaciones al tema, como cervezas con diferentes estilos y aromas, la posibilidad de contratar un catering para eventos empresariales, existe tambien la posibilidad de ofrecer menus para acompañar estas deliciosas cervezas.
+Consignas 1. START UP Y SCAFOLDING Creá un nuevo repositorio en tu cuenta de GitHub para subir el proyecto y, si corresponde, colocá instrucciones de cómo instalarlo en un archivo “readme.md” en la carpeta raíz del proyecto. Envianos el link al repositorio para ver el avance y descargarlo al momento de la entrega. Creá un proyecto en Node. Podés usar express generator o no, lo dejamos a elección tuya. Utilizá la base de datos que enviamos adjunta. Es la base de datos “movies_db” adaptada para tu challenge. Tendrás que crear toda la estructura necesaria para el proyecto: rutas, manejadores de rutas, modelos, controladores y algunas vistas sencillas con EJS. Implementá EJS como motor de vistas. No será necesario crear “partials” ni aplicar diseño, ni definir comportamientos responsive. Necesitamos validar que podés manejar las bases de EJS mostrando datos en el navegador y la información de un formulario. 
 
-# OBJETIVO
-Nuestro objetivo esta enfocado en empresas que fabriquen cervezas como tambien empresas de terceros que solo se dedican a la reventa de cervezas.
+2.- HOME PAGE La home del proyecto, o sea la primera página que cargue al iniciar, debe mostrar el listado de todas las películas de la base de datos. 
 
-# EQUIPO
-El equipo esta conformado por 3 integrantes.
-* `Matias Bossa Valvede`, 26 años, Estudiante de la Tec Univ en Desarrollo de Software (ULP) y Becario del curso de Desarrollo Web FullStack (Digital House)
-- `Gonzalo Patricio Di Ascenzi Severini` estudiante de Ingenieria Informática en UNSTA.
-    - Tercer año de Ing. Informática (UNSTA)  
-    - Diplomatura en estrategia de ciberseguridad (UNSTA) OCT 2020 - ACUALMENTE
-    - Programación Web Full Stack (Digital House) 
+3. DETALLE DE PELICULAS Cada una de las películas del punto 2 tiene que ser un link al detalle completo de cada película.Una vez en el detalle deben verse los datos de la película más el género al que pertenece (el nombre del género, no el número) y la lista de los actores que trabajaron en ella. Para mostrar información relacionada va a ser necesario implementar sequelize, crear los modelos y las relaciones necesarias. 
 
-* `Natalia María Cuello`,30 años, Diseñadora UI/UX freelance y data entry en una empresa. Programación Web Full Stack (Digital House)
+4. CRUD DE PELÍCULAS Desarrollá un CRUD de películas. Tendrás que crear toda la estructura necesaria para cumplir con las funciones del CRUD: agregar una nueva película, modificarla y eliminarla. Recordá que para crear y editar películas necesitarás formularios, revisar qué campos son obligatorios y colocar las validaciones correspondientes. Para eliminar una película podrás elegir en donde hacerlo. Podrías agregar la funcionalidad en el listado de películas o en el mismo formulario de edición. Si tenés otra opción, adelante. La eliminación de datos deberá utilizar la funcionalidad “paranoid”de sequelize. 
 
-# BUSQUEDA DE INSPIRACION
+5. REGISTRO Y LOGIN (short version) Vamos a crear ahora un pequeño proceso de registro y login. El objetivo es registrar a un usuario regular y a un usuario administrador para que luego puedan loguearse en el sitio y mantenerse logueados durante toda la navegación. Únicamente el administrador podrá acceder a las rutas del CRUD para crear, modificar o eliminar películas. El sistema debe permitir al usuario desloguearse (logout). La base de datos ya cuenta con una tabla “users” en la que podrás identificar al usuario regular con el rol “0” (es el dato por defecto) y al administrador con un número diferente a tu elección. Una vez registrado el usuario tendrás que modificar a mano el número en la columna “rol” de la tabla. 
 
-* https://www.clubcervecero.com.py -> Home del Sitio web y Carrito de Compras
-* https://www.beercoffee.com.ar/producto/beer-pack-cachalote-2-pinta-americana/ -> Detalles del Producto
-* https://www.pub-beer.com/menu -> Menus para acompañar las Cervezas
+6. IDENTIFICANDO AL ADMINISTRADOR Creá los middlewares y ajustes necesarios para que únicamente un rol de administrador pueda utilizar las funcionalidades del CRUD. El usuario regular y los usuarios no logueados únicamente podrán acceder al listado de películas y sus detalles
